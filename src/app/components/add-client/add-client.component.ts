@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Client } from '../../models/Client';
+
 @Component({
   selector: 'app-add-client',
   templateUrl: './add-client.component.html',
-  styleUrls: ['./add-client.component.css']
+  styleUrls: ['./add-client.component.css'],
 })
 export class AddClientComponent implements OnInit {
+  client: Client = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    balance: 0,
+  };
 
-  constructor() { }
+  disableBalanceOnAdd: boolean = true;
 
-  ngOnInit(): void {
-  }
+  constructor() {}
 
+  ngOnInit(): void {}
+
+  onSubmit(form) {}
 }
