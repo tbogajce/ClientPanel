@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // We need this module to work with forms
 import { FormsModule } from '@angular/forms';
+import { FlashMessagesModule } from 'angular2-flash-messages';
 
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
@@ -44,6 +45,7 @@ import { AppRoutingModule } from './app-routing.module';
     AngularFirestoreModule,
     AngularFireAuthModule,
     FormsModule,
+    FlashMessagesModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
